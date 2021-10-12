@@ -65,6 +65,10 @@ Route::group(['prefix'=>'/admin','middleware'=>'checkRoleAdmin'],function(){
         Route::put('/editWarehouse','Admin\warehouseController@editWarehouse')->name('editWarehouse');
         Route::delete('/deleteWarehouse','Admin\warehouseController@deleteWarehouse')->name('deleteWarehouse');
     });
+    Route::group(['prefix'=>'/telecommunication'],function(){
+        Route::get('/managerTelecommunicationCenter','Admin\telecommunicationController@indexManagerTelecommunicationCenter')->name('managerTelecommunicationCenter');
+        Route::get('/getManagerTelecommunicationCenter','Admin\telecommunicationController@getManagerTelecommunicationCenter')->name('getManagerTelecommunicationCenter');
+    });
 });
 //========================================================================================================
 //============User-DHTT_Router===============//

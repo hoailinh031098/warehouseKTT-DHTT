@@ -44,7 +44,6 @@ class deviceController extends Controller
                 'action',
             ])
             ->make(true);
-        //return Datatables::of($device)->make(true);
     }
 
     public function findDeviceGroup(Request $request)

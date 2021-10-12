@@ -56,7 +56,7 @@
             <!-- Divider -->
             <hr class="sidebar-divider">
             <div class="sidebar-heading">
-                Quản lý người dùng
+                Người dùng
             </div>
 
             <li class="nav-item">
@@ -79,7 +79,7 @@
 
             <!-- Heading -->
             <div class="sidebar-heading">
-                Quản lý thiết bị
+                Thiết bị
             </div>
 
             <!-- Nav Item - Pages Collapse Menu -->
@@ -101,7 +101,7 @@
             <hr class="sidebar-divider">
             <!-- Nav Item - Charts -->
             <div class="sidebar-heading">
-                Quản lý kho hàng
+                Kho hàng
             </div>
 
             <!-- Nav Item - Pages Collapse Menu -->
@@ -121,7 +121,28 @@
             </li>
 
             <!-- Nav Item - Tables -->
+            <hr class="sidebar-divider">
+            <!-- Nav Item - Charts -->
+            <div class="sidebar-heading">
+                Trung Tâm VT-KGG
+            </div>
 
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse4"
+                    aria-expanded="true" aria-controls="collapse4">
+                    <i class="fas fa-broadcast-tower"></i>
+                    <span>VT-KGG</span>
+                </a>
+                <div id="collapse4" class="collapse" aria-labelledby="heading2" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <!-- <h6 class="collapse-header">Custom Components:</h6> -->
+                        <a class="collapse-item" href="{{ route('managerTelecommunicationCenter') }}">Trung tâm viễn thông</a>
+                        <a class="collapse-item" href="{{ route('managerDevice') }}">Trạm viễn thông</a>
+                        <a class="collapse-item" href="{{ route('managerDevice') }}">Văn bản</a>
+                    </div>
+                </div>
+            </li>
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
 
@@ -391,6 +412,4 @@
     <!-- Page level custom scripts -->
     <script src="{{asset('js/demo/datatables-demo.js')}}"></script>
     <!-- JS End-->
-
-
 </html>
